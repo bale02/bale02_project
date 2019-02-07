@@ -25,7 +25,7 @@ if(session.getAttribute("userid") != null ){
 }
 %>
 <body>
-<br>
+
 <c:set var="id" value="<%=id %>"/>
 	<div class="container">
 	<form action="replyinsert.do" id="fm" method="post">
