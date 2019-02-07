@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs">	
+	<insert id="add">
+		insert into bbs values(bbs_seq.nextval,#{id},sysdate,#{title},#{content},#{img_file_name})
+	</insert>
+	
+	<select id="select" resultType="net.hb.bbs.bbsDTO">
+      select * from ( select rownum as rn, b.*, (select count(*) from bbsreply r where r.BBS_IDX=b.BBS_IDX) as cnt from ( select * from bbs 
+      <if test="skey != null">
+         <if test="skey == 'id'"> where upper(id) like '%' || upper(#{sval}) || '%' </if>
+         <if test="skey == 'title'"> where upper(title) like '%' || upper(#{sval}) || '%' </if>
+         <if test="skey == 'content'"> where upper(content) like '%' || upper(#{sval}) || '%' </if>
+         <if test="skey == 'all'"> where upper(id) || upper(title) || upper(content) like '%' || upper(#{sval}) || '%'</if>
+      </if>
+      order by bbs_idx desc ) b ) where rn between #{start} and #{end} 
+   </select>
+	
+	<select id="count" resultType="int">
+	     select count(*)  from bbs 
+	</select>
+	
+	<select id="countOne" resultType="int">
+ 	   select  count(*)  from bbs <if test="skey != null">
+         <if test="skey == 'id'"> where upper(id) like '%' || upper(#{sval}) || '%' </if>
+         <if test="skey == 'title'"> where upper(title) like '%' || upper(#{sval}) || '%' </if>
+         <if test="skey == 'content'"> where upper(content) like '%' || upper(#{sval}) || '%' </if>
+         <if test="skey == 'all'"> where upper(id) || upper(title) || upper(content) like '%' || upper(#{sval}) || '%'</if>
+      </if>
+ 	</select>
+ 	
+ 	<select id="detail" parameterType="int" resultType="net.hb.bbs.bbsDTO">
+ 		select * from bbs where bbs_idx= #{value}
+ 	</select>
+ 	
+ 	<delete id="delete">
+ 		delete from bbs where bbs_idx=#{value}
+ 	</delete>
+ 	
+ 	<update id="edit">
+ 		update bbs set title=#{title}, content=#{content}, bbs_date=sysdate, 
+ 			img_file_name=#{img_file_name} where bbs_idx=#{bbs_idx}
+ 	</update>
+</mapper>
