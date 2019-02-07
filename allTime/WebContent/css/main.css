@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+   font-family: 'Hanna' !important;
+}
+
+#navbar {
+	color: #fff;
+	background-color: #feb134;
+	border: .05rem solid #feb134;
+	font-family: 'Hanna';
+}
+
+#sidebar {
+	width: 130px;
+	color: #fff;
+	background-color: #4fb99f;
+	border: .05rem solid #4fb99f;
+	height: 1500px;
+	font-family: 'Hanna';
+	text-align: center;
+	float: left;
+}
+
+#sidebar a:hover {
+	color: #f1f1f1;
+}
+
+span, li {
+	font-family: 'Hanna';
+	text-align: center;
+	color: #ffffff;
+}
+
+h5, h6 {
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+.dropdown-header {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	color: #ffffff;
+}
+
+.form-group {
+	font-family: 'Hanna';
+}
+
+.modal-header {
+	background-color: #feb134;
+	color: #ffffff;
+}
+
+#btn {
+	font-family: 'Hanna';
+	background-color: #feb134;
+	border: .05rem solid #feb134;
+	color: #ffffff;
+}
+
+#content {
+	display: inline-block;
+}
+
+#bbs1 {
+	margin-left: 30px;
+	margin-top: 20px;
+	font-family: 'Hanna';
+}
+
+#bbs2 {
+	margin-top: 20px;
+	color: #ffffff;
+	font-family: 'Hanna';
+}
+
+#bbs3 {
+	margin-top: 20px;
+	color: #ffffff;
+	font-family: 'Hanna';
+}
+
+#head1 {
+	background-color: #112f41;
+	border: .05rem solid #112f41;
+	color: #ffffff;
+}
+
+#head2 {
+	background-color: #068587;
+	border: .05rem solid #068587;
+	color: #ffffff;
+}
+
+#head3 {
+	background-color: #ed553b;
+	border: .05rem solid #ed553b;
+	color: #ffffff;
+}
+
+.list-group-item {
+	color: #000000;
+}
+
+#msg {
+	font-family: 'Hanna';
+	background-color: #feb134;
+	border: .05rem solid #feb134;
+	color: #ffffff;
+	height: 400px;
+	width: 600px;
+	overflow: auto;
+}
+.outgoing_msg{
+	text-align: right;
+	margin-right: 20px;
+	
+}
+.incoming_msg{
+	text-align: left;
+	margin-left: 20px;
+}
+.type_name{
+	margin-left: 300px;
+	font-family: 'Hanna';
+}
+.write_msg{
+	width: 600px;
+	font-family: 'Hanna';
+}

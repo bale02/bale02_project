@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#navbar {
+	color: #fff;
+	background-color: #feb134;
+	border: .05rem solid #feb134;
+	font-family: 'Hanna';
+}
+
+#sidebar {
+	width: 180px;
+	color: #fff;
+	background-color: #4fb99f;
+	border: .05rem solid #4fb99f;
+	height: 1500px;
+	font-family: 'Hanna';
+	text-align: center;
+	float: left;
+}
+
+#sidebar a:hover {
+	color: #f1f1f1;
+}
+
+span, li {
+	font-family: 'Hanna';
+	text-align: center;
+	color: #ffffff;
+}
+
+h5, h6, h2 {
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+.dropdown-header {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	color: #ffffff;
+}
+
+.form-group {
+	font-family: 'Hanna';
+}
+
+.modal-header {
+	background-color: #feb134;
+	color: #ffffff;
+}
+
+h3 {
+	font-family: 'Hanna';
+	color: #068587;
+}
+
+#content {
+	display: inline-block;
+}
+
+#timeContainer {
+	width: 1000px;
+	margin-left: 200px;
+}
+
+.table-head {
+	background-color: #ed553b;
+	border: .05rem solid #ed553b;
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+#tra {
+	background-color: #f2b134;
+	border: .05rem solid #ffffff;
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+#trb {
+	background-color: #4fb99f;
+	border: .05rem solid #ffffff;
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+#btn {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	border: .05rem solid #ed553b;
+	color: #ffffff;
+}
+
+#btn:hover, #btn:active {
+	font-family: 'Hanna';
+	background-color: #068587;
+	border: .05rem solid #068587;
+	color: #ffffff;
+}
+
+.form-control {
+	font-family: 'Hanna';
+	color: #000000;
+}
+
+.form-check {
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+.custom-select {
+	font-family: 'Hanna';
+	color: #000000;
+}
+#regiBtn{
+	font-family: 'Hanna';
+	background-color: #4fb99f;
+	border: .05rem solid #4fb99f;
+	color: #ffffff;
+}
+#regiBtn:hover, #regiBtn:active {
+	font-family: 'Hanna';
+	background-color: #068587;
+	border: .05rem solid  #068587;
+	color: #ffffff;
+}
+#classListHead{
+	font-family: 'Hanna';
+	background-color: #f2b134;
+	border: .05rem solid  #f2b134;
+	color: #ffffff;
+}
+#tbody{
+	font-family: 'Hanna';
+	background-color: #112f41;
+	border: .05rem solid  #ffffff;
+	color: #ffffff;
+}
