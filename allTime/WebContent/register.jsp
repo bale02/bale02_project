@@ -48,7 +48,6 @@
 	}
 	function getCollege(name) {
 		document.getElementById("memberCollege").value = name;
-
 	}
 </script>
 

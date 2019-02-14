@@ -339,8 +339,6 @@ if (session.getAttribute("id") != null) {
 	</div>
 
 	<jsp:include page="login.jsp" flush="false"></jsp:include>
-
-
 	<jsp:include page="register.jsp" flush="false"></jsp:include>
 </body>
 
