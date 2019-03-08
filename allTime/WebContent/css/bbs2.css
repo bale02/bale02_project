@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#navbar {
+	color: #fff;
+	background-color: #feb134;
+	border: .05rem solid #feb134;
+	font-family: 'Hanna';
+}
+
+#sidebar {
+	width: 130px;
+	color: #fff;
+	background-color: #4fb99f;
+	border: .05rem solid #4fb99f;
+	height: 1500px;
+	font-family: 'Hanna';
+	text-align: center;
+	float: left;
+}
+
+#sidebar a:hover {
+	color: #f1f1f1;
+}
+
+span, li {
+	font-family: 'Hanna';
+	text-align: center;
+	color: #ffffff;
+}
+
+h5, h6 {
+	font-family: 'Hanna';
+	color: #ffffff;
+}
+
+.dropdown-header {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	color: #ffffff;
+}
+
+#content {
+	display: inline-block;
+}
+
+h3 {
+	font-family: 'Hanna';
+	text-align: center;
+	color: #112f41;
+}
+
+.panel-title {
+	font-family: 'Hanna';
+	text-align: center;
+	color: #068587;
+	margin-left: 30px;
+}
+
+#collegeInput {
+	margin-left: 100px;
+	width: 800px;
+}
+
+.form-control {
+	font-family: 'Hanna';
+}
+
+#btn {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	color: #ffffff;
+}
+
+#btn:hover, #btn:active {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	color: #ffffff;
+}
+
+.form-inline {
+	font-family: 'Hanna';
+	margin-left: 100px;
+	color: #ffffff;
+}
+
+#list {
+	width: 900px;
+	align-content: center;
+	margin-left: 120px;
+}
+
+.ui-state-default {
+	font-family: 'Hanna';
+	color: #000000;
+}
+
+#replyList {
+	width: 1000px;
+	margin-left: 100px;
+}
+
+#modBtn {
+	font-family: 'Hanna';
+	background-color: #ed553b;
+	border: .05rem solid #ed553b;
+	color: #ffffff;
+}
+#modBtn:hover, #modBtn:active {
+	font-family: 'Hanna';
+	background-color: #112f41;
+	border: .05rem solid #112f41;
+	color: #ffffff;
+}

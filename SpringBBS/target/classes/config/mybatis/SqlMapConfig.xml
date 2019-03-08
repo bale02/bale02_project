@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+		
+	<typeAliases>
+	   <typeAlias alias="dto" type="net.hb.bbs.bbsDTO"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="config/mybatis/bbs.xml"/>
+		<mapper resource="config/mybatis/member.xml"/>
+		<mapper resource="config/mybatis/bbs_reply.xml"/>
+	</mappers>
+</configuration>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bbs_reply">
+	<select id="select" parameterType="int" resultType="net.hb.bbs.reply.replyDTO">
+		select * from bbsreply where bbs_idx=#{value} order by bbsreply_idx desc
+	</select>
+	
+	<insert id="replyadd" parameterType="net.hb.bbs.reply.replyDTO">
+		insert into bbsreply values(bbsreply_seq.nextval,#{id},sysdate,#{content},#{bbs_idx})
+	</insert>
+	
+	<delete id="delete" parameterType="int">
+		delete from bbsreply where bbsreply_idx = #{idx}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
